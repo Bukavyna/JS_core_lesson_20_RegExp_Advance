@@ -8,6 +8,33 @@
 </head>
 <body>
 
+
+<!--Форма для юзера-->
+	<div class="container">
+		<form name="form-input" class="form form-input">
+			<span>Login</span>
+			<input type="text" name="login" id="login" class="form-input__text" placeholder="Enter login">
+			<span>Password</span>
+			<input type="password" name="password" id="password" class="form-input__text" placeholder="Enter password">
+			<span>Email address</span>
+			<input type="email" name="email" id="email" class="form-input__text" placeholder="Enter email">
+			<button class="btn" id="form-input__user-bnt">Add user</button>
+		</form>
+
+<!--		Дів для отримувача-->
+		<div class="form form-show">
+			<div class="form-show__info">
+				<span>#</span>
+				<span>Login</span>
+				<span>Password</span>
+				<span>Email</span>
+				<span>Edit</span>
+				<span>Delete</span>
+			</div>
+			<div id="form-show__text"></div>
+		</div>
+	</div>
+
 	<script src="Base/script.js"></script>
 
 </body>

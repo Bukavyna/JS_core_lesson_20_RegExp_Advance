@@ -4,4 +4,137 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
+	outline: none;
+	resize: none;
+}
+
+@import "variables";
+
+
+//Стилізація форми для юзера і елементів які знаходяться у ній
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: 18vw;
+	margin: 5% auto;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 49%;
+	height: 100%;
+
+	span {
+		font-size: 1.2vw;
+	}
+
+	input {
+		width: $input-width;
+		height: $input-height;
+		color: #717F94;
+		border: $input-border;
+		border-radius: 2px;
+		padding-left: 0.8vw;
+		margin-top: 0.3vw;
+		margin-bottom: 1vw;
+
+		font-size: 1vw;
+	}
+
+	.btn {
+		width: $btn-width;
+		height: $btn-height;
+		border-radius: $btn-border-radius;
+
+		font-weight: $btn-font-weight;
+		font-size: $btn-font-size;
+	}
+
+	#form-input__user-bnt {
+		color: #6EA68D;
+		background-color: white;
+		border: 2px solid #6EA68D;
+	}
+}
+
+
+//Стилізація контейнера для отримувача і елементів які знаходяться у ній
+.form-show {
+
+	.form-show__info {
+		min-height: 2vw;
+		display: flex;
+		align-items: center;
+		border-top: black 1px solid;
+		border-bottom: black 1px solid;
+
+		font-weight: 800;
+
+		span:nth-child(1) {margin-left: 1vw};
+		span:nth-child(2) {margin-left: 1vw};
+		span:nth-child(3) {margin-left: 3.5vw};
+		span:nth-child(4) {margin-left: 3vw};
+		span:nth-child(5) {margin-left: 8.6vw};
+		span:nth-child(6) {margin-left: 2.6vw};
+	}
+
+	#form-show__text {
+		overflow: scroll;
+		resize: none;
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+}
+
+//Стилізація елементів створених за допомоги JS
+.new-div {
+	display: flex;
+	height: 1.5vw;
+	font-size: 0.9vw;
+	margin-top: 0.5vw;
+
+	.div-number {
+		width: 2.5vw;
+		text-align: center;
+		line-height: 1.7vw;
+	}
+
+	.text-login {
+		width: 6.7vw;
+		line-height: 2vw;
+		overflow: hidden;
+	}
+
+	.text-password {
+		width: 8vw;
+		height: 2vw;
+		line-height: 2vw;
+		overflow: hidden;
+	}
+
+	.text-email {
+		width: 11.5vw;
+		height: 2vw;
+		line-height: 2vw;
+		overflow: hidden;
+	}
+
+	.button-edit {
+		width: 3.5vw;
+		font-size: 0.9vw;
+		background-color: #FFBC00;
+		margin-right:  1.4vw;
+		border-radius: 4px;
+	}
+
+	.button-delete {
+		width: 4.5vw;
+		font-size: 0.9vw;
+		color: white;
+		background-color: #EA4642;
+		border-radius: 4px;
+	}
 }
